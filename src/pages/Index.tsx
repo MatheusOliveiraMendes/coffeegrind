@@ -1,41 +1,10 @@
 import { Header } from '../components/Header';
 import { Hero } from '../components/Hero';
 import { CategorySection } from '../components/CategorySection';
-import { ProductSection } from '../components/ProductSection';
 import { PromotionSection } from '../components/PromotionSection';
 import { TestimonialsSection } from '../components/TestimonialsSection';
 import { Footer } from '../components/Footer';
 
-const coffeeProducts = [
-  {
-    id: 'lungo-1',
-    image: 'https://api.builder.io/api/v1/image/assets/7014096b18dd4e9abcb3939bccbecaad/93a7883ed995a73f236bd7cb2f8da69b0d5ff081?placeholderIfAbsent=true',
-    title: 'Lungo coffee',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit,',
-    price: 'Rs. 200'
-  },
-  {
-    id: 'lungo-2',
-    image: 'https://api.builder.io/api/v1/image/assets/7014096b18dd4e9abcb3939bccbecaad/aa43e5ff1f488727d21a677f1280f38e6b7edc14?placeholderIfAbsent=true',
-    title: 'Lungo coffee',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit,',
-    price: 'Rs. 200'
-  },
-  {
-    id: 'lungo-3',
-    image: 'https://api.builder.io/api/v1/image/assets/7014096b18dd4e9abcb3939bccbecaad/cdc2265dde63fa77523acaf074993862969b261d?placeholderIfAbsent=true',
-    title: 'Lungo coffee',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit,',
-    price: 'Rs. 200'
-  },
-  {
-    id: 'lungo-4',
-    image: 'https://api.builder.io/api/v1/image/assets/7014096b18dd4e9abcb3939bccbecaad/c7f96c4dbd411bc0edfbf231ace505ecd633917f?placeholderIfAbsent=true',
-    title: 'Lungo coffee',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit,',
-    price: 'Rs. 200'
-  }
-];
 
 const dessertProducts = [
   {
@@ -89,12 +58,7 @@ const Index = () => {
 
       {/* Coffee Products Section */}
       <main id="products">
-        <ProductSection
-          title="our special coffee"
-          products={coffeeProducts}
-          leftArrow="https://api.builder.io/api/v1/image/assets/7014096b18dd4e9abcb3939bccbecaad/5b7f7ac9acbfc200af62936ec03e4d506c626d30?placeholderIfAbsent=true"
-          rightArrow="https://api.builder.io/api/v1/image/assets/7014096b18dd4e9abcb3939bccbecaad/0c67768509b10762b0dbe0e7219cd948131406fe?placeholderIfAbsent=true"
-        />
+     
 
         {/* Dessert Products Section */}
         <div className="text-[rgba(48,38,28,1)] text-[32px] font-semibold tracking-[1.28px] uppercase ml-2.5 mt-20 text-center max-md:mt-10">
@@ -102,13 +66,7 @@ const Index = () => {
         </div>
         
         <div className="flex w-full max-w-[1760px] items-center gap-[40px_69px] flex-wrap mt-16 mx-auto max-md:max-w-full max-md:mt-10">
-          <button className="aspect-[1] object-contain w-[71px] self-stretch shrink-0 my-auto hover:opacity-80 transition-opacity">
-            <img
-              src="https://api.builder.io/api/v1/image/assets/7014096b18dd4e9abcb3939bccbecaad/35d03b86749c032296c17af5b29fb2f829f22622?placeholderIfAbsent=true"
-              alt="Previous desserts"
-              className="w-full h-full"
-            />
-          </button>
+        
           
           <div className="self-stretch grow shrink basis-auto max-md:max-w-full">
             <div className="gap-5 flex max-md:flex-col max-md:items-stretch">
@@ -137,7 +95,7 @@ const Index = () => {
                           {product.price}
                         </div>
                         <button className="bg-[rgba(42,0,0,1)] self-stretch flex items-center gap-2.5 text-sm text-white font-medium justify-center my-auto px-[26px] py-2.5 rounded-lg hover:bg-[rgba(42,0,0,0.8)] transition-colors max-md:px-5">
-                          <span className="self-stretch my-auto">Order Now</span>
+                          <span className="self-stretch my-auto">Order</span>
                         </button>
                       </div>
                     </div>
@@ -147,13 +105,7 @@ const Index = () => {
             </div>
           </div>
           
-          <button className="aspect-[1] object-contain w-[71px] self-stretch shrink-0 my-auto hover:opacity-80 transition-opacity">
-            <img
-              src="https://api.builder.io/api/v1/image/assets/7014096b18dd4e9abcb3939bccbecaad/251ecd74affa78e539b933288d100f6a6691de92?placeholderIfAbsent=true"
-              alt="Next desserts"
-              className="w-full h-full"
-            />
-          </button>
+   
         </div>
       </main>
 

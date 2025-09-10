@@ -17,7 +17,7 @@ export const PromotionSection: React.FC = () => {
               className="aspect-[1.55] object-contain w-full grow max-md:max-w-full max-md:mt-10"
             />
           </div>
-          <div className="w-[42%] ml-5 max-md:w-full max-md:ml-0">
+          <div className="w-[42%] m-15 max-md:w-full max-md:ml-0">
             <div className="flex w-full flex-col self-stretch items-stretch my-auto max-md:mt-10">
               <h2 className="text-black text-[40px] font-semibold leading-[50px]">
                 Check Out Our Best Coffee Beans
