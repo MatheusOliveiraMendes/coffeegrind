@@ -48,7 +48,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
             onClick={handleOrderClick}
             className="bg-[rgba(42,0,0,1)] self-stretch flex items-center gap-2.5 text-sm text-white font-medium justify-center my-auto px-[26px] py-2.5 rounded-lg hover:bg-[rgba(42,0,0,0.8)] transition-colors max-md:px-5"
           >
-            <span className="self-stretch my-auto">Order Now</span>
+            <span className="self-stretch my-auto">Order</span>
           </button>
         </div>
       </div>

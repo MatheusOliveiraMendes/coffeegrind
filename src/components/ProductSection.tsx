@@ -12,15 +12,12 @@ interface Product {
 interface ProductSectionProps {
   title: string;
   products: Product[];
-  leftArrow: string;
-  rightArrow: string;
+ 
 }
 
 export const ProductSection: React.FC<ProductSectionProps> = ({
   title,
   products,
-  leftArrow,
-  rightArrow
 }) => {
   return (
     <section className="w-full">
@@ -34,13 +31,7 @@ export const ProductSection: React.FC<ProductSectionProps> = ({
       </div>
       
       <div className="flex w-full max-w-[1760px] items-center gap-[40px_69px] flex-wrap mt-16 mx-auto max-md:max-w-full max-md:mt-10">
-        <button className="aspect-[1] object-contain w-[71px] self-stretch shrink-0 my-auto hover:opacity-80 transition-opacity">
-          <img
-            src={leftArrow}
-            alt="Previous products"
-            className="w-full h-full"
-          />
-        </button>
+   
         
         <div className="self-stretch grow shrink basis-auto max-md:max-w-full">
           <div className="gap-5 flex max-md:flex-col max-md:items-stretch">
@@ -60,13 +51,7 @@ export const ProductSection: React.FC<ProductSectionProps> = ({
           </div>
         </div>
         
-        <button className="aspect-[1] object-contain w-[71px] self-stretch shrink-0 my-auto hover:opacity-80 transition-opacity">
-          <img
-            src={rightArrow}
-            alt="Next products"
-            className="w-full h-full"
-          />
-        </button>
+  
       </div>
     </section>
   );

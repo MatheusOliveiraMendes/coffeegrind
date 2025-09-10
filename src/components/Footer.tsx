@@ -40,7 +40,7 @@ export const Footer: React.FC = () => {
             C
           </span>
           <span style={{fontFamily: 'Playfair Display, -apple-system, Roboto, Helvetica, sans-serif', fontSize: '28px'}}>
-            offee
+            offeeGrind
           </span>
         </div>
         

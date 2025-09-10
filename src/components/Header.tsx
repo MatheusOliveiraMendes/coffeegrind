@@ -8,7 +8,7 @@ export const Header: React.FC<HeaderProps> = ({ className = '' }) => {
   return (
     <header className={`flex w-full items-stretch gap-5 text-white whitespace-nowrap flex-wrap justify-between max-md:max-w-full ${className}`}>
       <div className="text-[32px] font-bold">
-        Coffea
+        CoffeeGrind
       </div>
       <nav className="flex items-stretch gap-10 text-lg font-medium uppercase flex-wrap mt-[11px]">
         <a href="#home" className="grow hover:text-gray-200 transition-colors">
