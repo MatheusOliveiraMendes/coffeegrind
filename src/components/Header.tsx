@@ -20,15 +20,18 @@ export const Header: React.FC<HeaderProps> = ({ className = '' }) => {
   const closeMenu = () => setIsMenuOpen(false);
 
   return (
-    <header
-      className={`flex w-full flex-col items-center gap-4 text-white ${className}`}
-    >
-      <div className="flex w-full items-center justify-between rounded-full bg-[rgba(0,0,0,0.45)] px-6 py-4 backdrop-blur-lg shadow-[0_20px_60px_rgba(0,0,0,0.35)] transition-all duration-300 md:px-10 lg:px-16">
-        <div className="text-[28px] font-semibold uppercase tracking-[6px]">
-          CoffeeGrind
+    <header className={`relative flex w-full flex-col text-white ${className}`}>
+      <div className="flex flex-wrap items-center justify-between gap-4 rounded-full border border-white/10 bg-white/10 px-6 py-4 shadow-[0_25px_80px_rgba(11,7,2,0.4)] backdrop-blur-xl transition-all duration-300 lg:px-10">
+        <div className="flex flex-col leading-tight text-left">
+          <span className="text-[11px] font-semibold uppercase tracking-[0.45em] text-white/60">
+            Coffee House
+          </span>
+          <span className="text-xl font-semibold uppercase tracking-[0.25em]">
+            CoffeeGrind
+          </span>
         </div>
 
-        <nav className="hidden lg:flex items-center gap-8 text-sm font-medium uppercase tracking-[3px]">
+        <nav className="hidden items-center gap-8 text-xs font-semibold uppercase tracking-[0.4em] lg:flex">
           {menuItems.map(({ href, label }) => (
             <a
               key={href}
@@ -44,16 +47,16 @@ export const Header: React.FC<HeaderProps> = ({ className = '' }) => {
         <div className="flex items-center gap-4">
           <a
             href="#products"
-            className="hidden lg:inline-flex items-center rounded-full border border-[rgba(255,255,255,0.25)] bg-[rgba(255,255,255,0.08)] px-6 py-2 text-xs font-semibold uppercase tracking-[3px] transition duration-300 hover:bg-white hover:text-[rgba(42,0,0,1)]"
+            className="hidden items-center rounded-full border border-white/20 bg-white/15 px-7 py-2 text-[10px] font-semibold uppercase tracking-[0.6em] text-white transition duration-300 hover:bg-[rgba(224,196,160,1)] hover:text-[rgba(48,38,28,1)] lg:inline-flex"
           >
-            Order Now
+            Reserve a Table
           </a>
           <button
             type="button"
             onClick={toggleMenu}
             aria-label="Toggle navigation"
             aria-expanded={isMenuOpen}
-            className="inline-flex h-12 w-12 flex-col items-center justify-center gap-1.5 rounded-full border border-[rgba(255,255,255,0.25)] bg-[rgba(255,255,255,0.08)] transition duration-300 hover:bg-white hover:text-[rgba(42,0,0,1)] lg:hidden"
+            className="inline-flex h-12 w-12 flex-col items-center justify-center gap-1.5 rounded-full border border-white/15 bg-white/10 transition duration-300 hover:bg-white hover:text-[rgba(48,38,28,1)] lg:hidden"
           >
             <span
               className={`block h-[2px] w-6 bg-current transition-transform duration-300 ${
@@ -75,8 +78,8 @@ export const Header: React.FC<HeaderProps> = ({ className = '' }) => {
       </div>
 
       {isMenuOpen && (
-        <nav className="w-full rounded-3xl bg-[rgba(0,0,0,0.75)] px-6 py-6 text-center text-sm font-medium uppercase tracking-[3px] shadow-[0_20px_60px_rgba(0,0,0,0.35)] lg:hidden md:px-10 lg:px-16">
-          <div className="flex flex-col gap-4">
+        <nav className="mt-4 w-full rounded-3xl border border-white/10 bg-black/70 px-6 py-6 text-xs font-semibold uppercase tracking-[0.45em] shadow-[0_30px_80px_rgba(0,0,0,0.45)] backdrop-blur lg:hidden">
+          <div className="flex flex-col gap-5 text-left">
             {menuItems.map(({ href, label }) => (
               <a
                 key={href}
@@ -90,9 +93,9 @@ export const Header: React.FC<HeaderProps> = ({ className = '' }) => {
             <a
               href="#products"
               onClick={closeMenu}
-              className="rounded-full border border-[rgba(255,255,255,0.25)] bg-[rgba(255,255,255,0.08)] px-6 py-2 text-xs font-semibold tracking-[3px] transition duration-300 hover:bg-white hover:text-[rgba(42,0,0,1)]"
+              className="rounded-full border border-white/15 bg-white/10 px-6 py-3 text-[10px] font-semibold tracking-[0.6em] transition duration-300 hover:bg-[rgba(224,196,160,1)] hover:text-[rgba(48,38,28,1)]"
             >
-              Order Now
+              Reserve a Table
             </a>
           </div>
         </nav>
