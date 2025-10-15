@@ -24,11 +24,11 @@ const footerSections: FooterSection[] = [
   }
 ];
 
-const socialIcons = [
-  'https://api.builder.io/api/v1/image/assets/7014096b18dd4e9abcb3939bccbecaad/b8ab22db1991534c0de6afa5fb2a392440adb60b?placeholderIfAbsent=true',
-  'https://api.builder.io/api/v1/image/assets/7014096b18dd4e9abcb3939bccbecaad/5ca1898a34719967788429128618904f9213195e?placeholderIfAbsent=true',
-  'https://api.builder.io/api/v1/image/assets/7014096b18dd4e9abcb3939bccbecaad/1798d3315dce15fee28a4ef03411c36e00c82b51?placeholderIfAbsent=true',
-  'https://api.builder.io/api/v1/image/assets/7014096b18dd4e9abcb3939bccbecaad/c5ffb0b140aa903d2b77b655b7d1f0c6a7ad4807?placeholderIfAbsent=true'
+const socialLinks = [
+  { label: 'Facebook', icon: '/facebook.svg' },
+  { label: 'Instagram', icon: '/instagram.svg' },
+  { label: 'Twitter', icon: '/twitter.svg' },
+  { label: 'LinkedIn', icon: '/linkedin.svg' }
 ];
 
 export const Footer: React.FC = () => {
@@ -44,7 +44,7 @@ export const Footer: React.FC = () => {
           </span>
         </div>
         
-        {footerSections.map((section, index) => (
+        {footerSections.map((section) => (
           <div key={section.title} className="flex flex-col items-stretch text-lg text-white font-normal mt-4">
             <h3 className="text-2xl font-medium uppercase">
               {section.title}
@@ -65,18 +65,21 @@ export const Footer: React.FC = () => {
           <h3 className="text-white text-2xl font-bold uppercase">
             SOCIAL MEDIA
           </h3>
-          <div className="self-center flex w-[132px] max-w-full items-stretch gap-3 mt-[35px]">
-            {socialIcons.map((icon, index) => (
+          <div className="self-center flex w-[180px] max-w-full items-stretch gap-3 mt-[35px]">
+            {socialLinks.map(({ label, icon }, index) => (
               <a 
                 key={index}
                 href="#"
+                aria-label={`Visit our ${label}`}
                 className="hover:opacity-80 transition-opacity"
               >
-                <img
-                  src={icon}
-                  alt={`Social media ${index + 1}`}
-                  className="aspect-[1] object-contain w-6 shrink-0"
-                />
+                <span className="w-8 h-8 flex items-center justify-center">
+                  <img
+                    src={icon}
+                    alt={label}
+                    className="w-6 h-6 object-contain filter invert"
+                  />
+                </span>
               </a>
             ))}
           </div>

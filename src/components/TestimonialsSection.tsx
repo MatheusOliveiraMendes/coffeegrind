@@ -15,14 +15,14 @@ const testimonials: Testimonial[] = [
     id: '1',
     name: 'James Smith',
     role: 'Entrepreneur',
-    avatar: 'https://api.builder.io/api/v1/image/assets/7014096b18dd4e9abcb3939bccbecaad/4bb1f9d3c9a9139607a75c65e18d69c68506ef92?placeholderIfAbsent=true',
+    avatar: '/Avatar1.jpg',
     testimonial: 'Lorem ipsum dolor sit amet, consectetur adipisicing ,Lorem ipsum dolor sit amet, consectetur adipisicing dolor sit amet, consectetur adipisicing elit,Lorem ipsum amet, consectetur adipisicing elit,Lorem ipsum dolor sit adipisicing elit,Lorem ipsum dolor sit dolor sit amet, consectetur adipisicing elit,'
   },
   {
     id: '2',
     name: 'James Smith',
     role: 'Entrepreneur',
-    avatar: 'https://api.builder.io/api/v1/image/assets/7014096b18dd4e9abcb3939bccbecaad/4bb1f9d3c9a9139607a75c65e18d69c68506ef92?placeholderIfAbsent=true',
+    avatar: '/Avatar2.jpg',
     testimonial: 'Lorem ipsum dolor sit amet, consectetur adipisicing ,Lorem ipsum dolor sit amet, consectetur adipisicing dolor sit amet, consectetur adipisicing elit,Lorem ipsum amet, consectetur adipisicing elit,Lorem ipsum dolor sit adipisicing elit,Lorem ipsum dolor sit dolor sit amet, consectetur adipisicing elit,',
     featured: true
   },
@@ -30,7 +30,7 @@ const testimonials: Testimonial[] = [
     id: '3',
     name: 'James Smith',
     role: 'Entrepreneur',
-    avatar: 'https://api.builder.io/api/v1/image/assets/7014096b18dd4e9abcb3939bccbecaad/4bb1f9d3c9a9139607a75c65e18d69c68506ef92?placeholderIfAbsent=true',
+    avatar: '/Avatar3.jpg',
     testimonial: 'Lorem ipsum dolor sit amet, consectetur adipisicing ,Lorem ipsum dolor sit amet, consectetur adipisicing dolor sit amet, consectetur adipisicing elit,Lorem ipsum amet, consectetur adipisicing elit,Lorem ipsum dolor sit adipisicing elit,Lorem ipsum dolor sit dolor sit amet, consectetur adipisicing elit,'
   }
 ];

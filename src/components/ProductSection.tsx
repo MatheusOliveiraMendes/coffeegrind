@@ -23,7 +23,7 @@ export const ProductSection: React.FC<ProductSectionProps> = ({
     <section className="w-full">
       <div className="flex w-[689px] max-w-full flex-col text-[32px] text-[rgba(48,38,28,1)] font-semibold uppercase tracking-[1.28px] mt-[37px] mx-auto">
         <img
-          src="https://api.builder.io/api/v1/image/assets/7014096b18dd4e9abcb3939bccbecaad/f2933144ab5f1aa1295364552782f70bd24bcb40?placeholderIfAbsent=true"
+          src="/heart.svg"
           alt="Decorative element"
           className="aspect-[1] object-contain w-6"
         />
