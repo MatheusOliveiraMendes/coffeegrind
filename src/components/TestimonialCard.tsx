@@ -21,7 +21,7 @@ export const TestimonialCard: React.FC<TestimonialCardProps> = ({
         <img
           src={avatar}
           alt={`${name} avatar`}
-          className="aspect-[1] object-contain w-14 self-stretch shrink-0 my-auto rounded-[50%]"
+          className="w-14 h-14 object-cover rounded-full shrink-0 my-auto"
         />
         <div className="self-stretch w-[121px] my-auto">
           <div className="text-[rgba(48,38,28,1)] text-lg">
